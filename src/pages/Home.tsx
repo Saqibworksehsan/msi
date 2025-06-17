@@ -56,7 +56,7 @@ const Home = () => {
               <br />
               <span className="text-gray-800">Solutions for Industrial</span>
               <br />
-              <span className="text-gray-800">Wastewater & Soil Treatment</span>
+              <span className="text-gray-800">Wastewater & Soil Treatment </span>
             </motion.h1>
 
             {/* Subheadline */}
