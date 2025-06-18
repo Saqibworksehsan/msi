@@ -4,7 +4,6 @@ import { ArrowRight, Play, Award, Users, Zap, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import AnimatedGradientBackground from '../components/AnimatedGradientBackground';
 import ParticleBackground from '../components/ParticleBackground';
-import Logo from '../components/Logo';
 
 const Home = () => {
   const scrollToNext = () => {
@@ -23,14 +22,7 @@ const Home = () => {
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* Logo showcase */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="mb-8"
-            >
-              <Logo size="xl" className="justify-center" />
-            </motion.div>
+            
 
             {/* Badge */}
             <motion.div

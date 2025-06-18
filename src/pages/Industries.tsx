@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Factory, Shirt, Candy, Pill, FileText, Building2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
-import Logo from '../components/Logo';
 
 const Industries = () => {
   const industries = [
@@ -77,9 +76,7 @@ const Industries = () => {
                 transition={{ duration: 0.8 }}
                 className="text-center mb-16"
               >
-                <div className="flex justify-center mb-8">
-                  <Logo size="lg" />
-                </div>
+                
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                   Industries <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">We Serve</span>
                 </h1>

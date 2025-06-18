@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Microscope, Shield, Lightbulb, Target, Award } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
-import Logo from '../components/Logo';
 
 const About = () => {
   return (
@@ -18,9 +17,7 @@ const About = () => {
                 transition={{ duration: 0.8 }}
                 className="text-center mb-16"
               >
-                <div className="flex justify-center mb-8">
-                  <Logo size="lg" />
-                </div>
+                
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                   About <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">MSI Biotech</span>
                 </h1>
