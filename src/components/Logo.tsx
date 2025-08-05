@@ -19,10 +19,11 @@ const Logo: React.FC<LogoProps> = ({ size = 'md', className = '' }) => {
   return (
     <div className={`flex items-center space-x-3 ${className}`}>
       <div className={`${sizeClasses[size]} relative`}>
-        <img 
-          src="public/image.png" 
-          alt="MSI Biotech Logo" 
+        <img
+          src="public/favicon-unscreen.gif"
+          alt="MSI Biotech Logo"
           className="w-full h-full object-contain"
+          style={{ filter: 'brightness(1.01) contrast(1.01)' }}  // crude trick
         />
       </div>
       
