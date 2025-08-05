@@ -1,7 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
-import Logo from './Logo';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
+import Logo from "./Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,20 +29,33 @@ const Footer = () => {
           <div className="space-y-6">
             <Logo size="md" showText={true} className="text-white" />
             <p className="text-gray-300 leading-relaxed">
-              Leading environmental biotechnology company specializing in enzyme-based and microbial solutions 
-              for industrial wastewater treatment and soil remediation since 2007.
+              Leading environmental biotechnology company specializing in
+              enzyme-based and microbial solutions for industrial wastewater
+              treatment and soil remediation since 2007.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-emerald-600 transition-colors duration-300">
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-emerald-600 transition-colors duration-300"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
+              >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors duration-300">
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors duration-300"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors duration-300">
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors duration-300"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -45,12 +66,12 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {[
-                { name: 'Home', path: '/' },
-                { name: 'About', path: '/about' },
-                { name: 'Products', path: '/products' },
-                { name: 'Services', path: '/services' },
-                { name: 'Industries', path: '/industries' },
-                { name: 'Contact', path: '/contact' }
+                { name: "Home", path: "/" },
+                { name: "About", path: "/about" },
+                { name: "Products", path: "/products" },
+                { name: "Services", path: "/services" },
+                { name: "Industries", path: "/industries" },
+                { name: "Contact", path: "/contact" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -66,25 +87,62 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Our Services</h4>
+            <h4 className="text-lg font-semibold mb-6">
+              <Link
+                to="/services"
+                className="hover:text-emerald-400 transition-colors"
+              >
+                Our Services
+              </Link>
+            </h4>
             <ul className="space-y-3 text-gray-300">
               <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-                ETP/CETP Stabilization
+                <Link
+                  to="/services"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  ETP/CETP Stabilization
+                </Link>
               </li>
               <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-                Sewage Treatment
+                <Link
+                  to="/services"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  Sewage Treatment
+                </Link>
               </li>
               <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-                Soil Bioremediation
+                <Link
+                  to="/services"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  Soil Bioremediation
+                </Link>
               </li>
               <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-                Odor Control
+                <Link
+                  to="/services"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  Odor Control
+                </Link>
               </li>
               <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-                Lab Analysis
+                <Link
+                  to="/services"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  Lab Analysis
+                </Link>
               </li>
               <li className="hover:text-emerald-400 transition-colors duration-300 cursor-pointer">
-                Process Optimization
+                <Link
+                  to="/services"
+                  className="hover:text-emerald-400 transition-colors duration-300"
+                >
+                  Process Optimization
+                </Link>
               </li>
             </ul>
           </div>
@@ -96,8 +154,10 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0" />
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  No. 1380, Old Street, Amburpet<br />
-                  Vaniyambadi – 635751<br />
+                  No. 1380, Old Street, Amburpet
+                  <br />
+                  Vaniyambadi – 635751
+                  <br />
                   Tamil Nadu, India
                 </p>
               </div>
@@ -126,13 +186,22 @@ const Footer = () => {
               © {currentYear} MSI Biotech. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-400 transition-colors duration-300"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-400 transition-colors duration-300"
+              >
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-400 transition-colors duration-300"
+              >
                 Cookie Policy
               </a>
             </div>
