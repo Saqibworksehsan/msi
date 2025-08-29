@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <img src="public/cropped-msi-icon.png" alt="MSI Biotech Logo" className="w-full h-full object-contain" />
+            <img src="cropped-msi-icon.png" alt="MSI Biotech Logo" className="w-14 h-14 object-contain" />
             <p className="text-gray-300 leading-relaxed">
               Leading environmental biotechnology company specializing in
               enzyme-based and microbial solutions for industrial wastewater
